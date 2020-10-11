@@ -5,5 +5,5 @@ const container = document.querySelector("#root")
 
 render(new User({
   avatar: "./images/ash.jpg",
-  name: "Ash",
+  name: "Amaury",
 }), container)
