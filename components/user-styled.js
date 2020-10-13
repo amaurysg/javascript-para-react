@@ -1,5 +1,5 @@
 import styled from "../lib/styled-components.js"
-import { Component } from "../lib/react.js"
+import { Component } from "../lib/react/src/react.js"
 
 
 const UserStyled = styled.div`
