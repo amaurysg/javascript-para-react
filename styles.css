@@ -29,3 +29,6 @@ body {
   border: 5px solid white;
   box-shadow: 0 0 2px black;
 }
+h1{
+  text-align: center;
+}
