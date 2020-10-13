@@ -4,4 +4,4 @@ import App from "./components/app.js"
 
 const container = document.querySelector("#root")
 
-render(new App(), container)
+render(new App(), container) 
