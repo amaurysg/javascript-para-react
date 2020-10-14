@@ -11,6 +11,9 @@ console.log(element)
 class App extends Component {
   render() {
     return createElement("div", {
+      onclick: function () {
+        console.log("Hola Mundo")
+      },
       class: "app",
       children: new Wrapper({
         children: [new User({
