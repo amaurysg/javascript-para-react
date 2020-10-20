@@ -1,7 +1,7 @@
 import { Component, createElement } from "../lib/react/index.js"
 import User from "./user.js"
 import Wrapper from "./wrapper.js"
-/* import UserStyled from "./user-styled.js" */
+import UserStyled from "./user-styled.js"
 
 const element = createElement("h1", {
   class: "title"
@@ -11,15 +11,21 @@ console.log(element)
 class App extends Component {
   render() {
     return createElement("div", {
-      onclick: function () {
-        console.log("Hola Mundo")
-      },
       class: "app",
       children: new Wrapper({
-        children: [new User({
-          name: "Amaury",
-          avatar: "./images/ash.jpg"
-        })]
+        children: [
+          new User({
+            name: "Amaury",
+            avatar: "./images/ash.jpg",
+            age: 10,
+          }),
+          new UserStyled({
+            name: "Amaury",
+            avatar: "./images/ash.jpg",
+            age: 10,
+          })
+
+        ]
       })
     }, "Esta es la App")
   }
